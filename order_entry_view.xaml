@@ -2,14 +2,19 @@
 ~openerp
     ~data
 
-        ~record model='ir.actions.act_window' #fnx_open_view_customer
-            @name: Customer
-            @type: ir.actions.act_window
-            @res_model: res.partner
-            @view_type: form
-            @view_mode: tree,form
-            @context: {}
+        ~menuitem name='Customer' sequence='15' #portal_customer parent='portal.portal_menu' groups='portal.group_portal'
 
-        ~menuitem name='Customer' sequence='7' #portal_customer parent='portal.portal_menu'
-        ~menuitem name='Customer' sequence='11' parent='fnx_customer_portal.portal_customer' action='base.action_partner_customer_form' #portal_customer
-        ~menuitem name='Place Order' sequence='15' parent='fnx_customer_portal.portal_customer' action='fnx_open_view_customer' #portal_order_online
+        ~record #fnx_customer_portal_online_order_action model='ir.actions.act_window'
+            @name: Online Order
+            @type: ir.actions.act_window
+            @res_model: fis_integration.online_order
+            @view_type: form
+            @view_mode: form
+            @target: new
+            @domain: [('id','=',False)]
+
+        ~menuitem name='Place Order' #portal_order_online
+         | sequence='25'
+         | parent='fnx_customer_portal.portal_customer'
+         | action='fnx_customer_portal.fnx_customer_portal_online_order_action'
+         | groups='portal.group_portal'
