@@ -1,0 +1,15 @@
+!!! xml1.0
+~openerp
+    ~data
+
+        ~record model='ir.actions.act_window' #fnx_open_view_customer
+            @name: Customer
+            @type: ir.actions.act_window
+            @res_model: res.partner
+            @view_type: form
+            @view_mode: tree,form
+            @context: {}
+
+        ~menuitem name='Customer' sequence='7' #portal_customer parent='portal.portal_menu'
+        ~menuitem name='Customer' sequence='11' parent='fnx_customer_portal.portal_customer' action='base.action_partner_customer_form' #portal_customer
+        ~menuitem name='Place Order' sequence='15' parent='fnx_customer_portal.portal_customer' action='fnx_open_view_customer' #portal_order_online
