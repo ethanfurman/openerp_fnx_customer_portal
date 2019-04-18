@@ -14,7 +14,10 @@
     'depends': [
         'base',
         'fis_integration',
+	'fnx_sr',
         'mail',
+	'portal',
+	'sample',
         'web',
         ],
     'js': [
@@ -23,6 +26,9 @@
         ],
     'data': [
         'order_entry_view.xaml',
+	'res_partner_view.xaml',
+	'security/fnx_customer_portal_security.xaml',
+	'security/ir.model.access.csv',
         ],
     'test': [],
     'installable': True,

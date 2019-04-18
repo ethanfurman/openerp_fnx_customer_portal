@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner_category_portal,res.partner.category.portal,base.model_res_partner_category,portal.group_portal,1,0,0,0
+access_product_pricelist_portal,product.pricelist.portal,product.model_product_pricelist,portal.group_portal,1,0,0,0
+access_project_task_portal,project.project.task.portal,project.model_project_task,portal.group_portal,1,0,0,0
+access_res_partner_bank_portal,res.partner.bank.portal,base.model_res_partner_bank,portal.group_portal,1,0,0,0
