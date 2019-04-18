@@ -11,3 +11,6 @@
             @perm_create eval='False'
             @perm_unlink eval='False'
             @perm_write eval='False'
+
+        ~record id='portal.group_portal' model='res.groups'
+            @implied_ids eval="[(4, ref('fnx_sr.group_fnx_sr_guest'))]"
