@@ -17,6 +17,7 @@
 	'fnx_sr',
         'mail',
 	'portal',
+	'product',
 	'sample',
         'web',
         ],

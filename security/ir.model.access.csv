@@ -1,5 +1,24 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_res_partner_category_portal,res.partner.category.portal,base.model_res_partner_category,portal.group_portal,1,0,0,0
-access_product_pricelist_portal,product.pricelist.portal,product.model_product_pricelist,portal.group_portal,1,0,0,0
-access_project_task_portal,project.project.task.portal,project.model_project_task,portal.group_portal,1,0,0,0
+
 access_res_partner_bank_portal,res.partner.bank.portal,base.model_res_partner_bank,portal.group_portal,1,0,0,0
+access_res_partner_category_portal,res.partner.category.portal,base.model_res_partner_category,portal.group_portal,1,0,0,0
+
+access_project_task_portal,project.project.task.portal,project.model_project_task,portal.group_portal,1,0,0,0
+
+
+access_pricelist_partnerinfo_portal,pricelist.partnerinfo.portal,product.model_pricelist_partnerinfo,portal.group_portal,1,0,0,0
+
+access_product_category_portal,product.category.portal,product.model_product_category,portal.group_portal,1,0,0,0
+access_product_ul_portal,product.ul.portal,product.model_product_ul,portal.group_portal,1,0,0,0
+access_product_uom_categ_portal,product.uom.categ.portal,product.model_product_uom_categ,portal.group_portal,1,0,0,0
+access_product_uom_portal,product.uom.portal,product.model_product_uom,portal.group_portal,1,0,0,0
+access_product_packaging_portal,product.packaging.portal,product.model_product_packaging,portal.group_portal,1,0,0,0
+access_product_price_type_portal,product.price.type.portal,product.model_product_price_type,portal.group_portal,1,0,0,0
+access_product_pricelist_portal,product.pricelist.portal,product.model_product_pricelist,portal.group_portal,1,0,0,0
+access_product_pricelist_type_portal,product.pricelist.type.portal,product.model_product_pricelist_type,portal.group_portal,1,0,0,0
+access_product_pricelist_version_portal,product.pricelist.version.portal,product.model_product_pricelist_version,portal.group_portal,1,0,0,0
+access_product_pricelist_item_portal,product.pricelist.item.portal,product.model_product_pricelist_item,portal.group_portal,1,0,0,0
+access_product_product_employee,product.product employee,product.model_product_product,portal.group_portal,1,0,0,0
+access_product_supplierinfo_portal,product.supplierinfo.portal,product.model_product_supplierinfo,portal.group_portal,1,0,0,0
+access_product_template_portal,product.template.portal,product.model_product_template,portal.group_portal,1,0,0,0
+
