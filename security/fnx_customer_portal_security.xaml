@@ -6,7 +6,7 @@
         ~record #fnx_customer_portal_read_related_res_partner model='ir.rule'
             @name: res_partner: read access on related partner (FIS ID = login)
             @model_id ref='base.model_res_partner'
-            @domain_force: [('xml_id','=',user.login)]
+            @domain_force: [('xml_id','=',user.fis_partner_code)]
             @groups eval="[(4, ref('portal.group_portal'))]"
             @perm_create eval='False'
             @perm_unlink eval='False'
