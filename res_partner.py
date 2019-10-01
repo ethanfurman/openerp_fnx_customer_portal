@@ -13,7 +13,6 @@ class res_partner(osv.Model):
     _inherit = 'res.partner'
 
     def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):
-        print ' in new search'
         if context is None:
             context = {}
         if context.get('fnx_customer_portal_account'):
