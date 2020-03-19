@@ -10,7 +10,7 @@
             @view_mode: kanban,form
             @view_id ref='base.res_partner_kanban_view'
             @context: {'fnx_customer_portal_account': True}
-            @domain: [('is_company','=',True)]
+            @domain: ['|',('is_company','=',True),('fis_ship_to_parent_id','!=',False)]
 
         ~menuitem name='Account' sequence='15' parent='fnx_customer_portal.portal_customer' action='fnx_customer_portal.fnx_open_view_customer' groups='portal.group_portal' #portal_customer_account
 
