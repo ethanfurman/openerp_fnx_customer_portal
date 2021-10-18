@@ -12,7 +12,6 @@
             @view_mode: form
             @target: new
             @domain: [('id','=',False)]
-            @context: {'customer_portal': True}
 
         ~menuitem name='Place Order' #portal_order_online
          | sequence='25'

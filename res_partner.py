@@ -18,10 +18,11 @@ class res_partner(osv.Model):
         if context.get('fnx_customer_portal_account'):
             res_users = self.pool.get('res.users')
             user = res_users.browse(cr, uid, uid, context=context)
+            domain = [('xml_id','=',user.fis_partner_id.xml_id),('is_company','=',True)]
             if isinstance(args, list):
-                args.append(('xml_id','=',user.fis_partner_code))
+                args.extend(domain)
             elif isinstance(args, tuple):
-                args = args + (('xml_id','=',user.fis_partner_code), )
+                args = args + tuple(domain)
         return super(res_partner, self).search(
                 cr, uid, args,
                 offset=offset,
